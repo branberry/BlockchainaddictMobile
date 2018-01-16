@@ -1,28 +1,13 @@
 import React, {Component} from 'react';
-import { StyleSheet, Text, View, ScrollView, Image } from 'react-native';
-
-class Greeting extends Component {
-  render() {
-    return (
-      <Text style={styles.titleText}>Hello {this.props.name}!</Text>
-    );
-  }
- }
-
- class Blink extends Component {
-   constructor(props) {
-     super(props);
-     this.state = {isShowingText: true};
-   }
-
-   render() {
-     return (
-       <Text>Hi</Text>
-     );
-   }
- }
+import { StyleSheet, Text, View, ScrollView, Image, TextInput } from 'react-native';
 
 export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: ''
+    };
+  }
   render() {
     return (
       <View style={{flex: 1}}>
@@ -30,6 +15,11 @@ export default class App extends Component {
           <Text style={styles.titleText}>Blockchain Addict </Text>
         </View>
         <View style={styles.subContainer}>
+        <TextInput
+          style={{height: 40}}
+          placeholder="Type here to translate"
+          onChangeText={(text) => this.setState({text})}
+        />
         </View>
       </View>
     );
@@ -48,7 +38,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
   },
   titleText : {
-    fontFamily: 'serif',
+    fontFamily: 'monospace',
     fontSize: 30,
     color:'#CCCCCC', 
   },
