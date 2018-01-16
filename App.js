@@ -40,7 +40,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#2E4057',
-   
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -49,6 +48,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
   },
   titleText : {
+    fontFamily: 'serif',
     fontSize: 30,
     color:'#CCCCCC', 
   },
