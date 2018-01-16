@@ -29,9 +29,9 @@ class TestView extends React.Component {
         }
     }
 
- //   componentDidMount() {
-//        return fetch('https://min-api.cryptocompare.com/data/price?fsym=ADA&tsyms=USD')
-//    }
+  componentDidMount() {
+     return fetch('https://min-api.cryptocompare.com/data/price?fsym=ADA&tsyms=USD')
+   }
 
     render() {
         return (
