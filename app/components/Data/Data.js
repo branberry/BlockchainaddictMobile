@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './styles.js';
 
-class Data extends Component {
+export default class Data extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -14,7 +14,7 @@ class Data extends Component {
     Render() {
         return(
             <View> 
-            {this.state.usd}
+                {this.state.usd}
             </View>
         );
     }

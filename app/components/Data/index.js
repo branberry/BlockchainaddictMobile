@@ -1,3 +1,3 @@
-import {Data} from './Data.js';
+import Data from './Data.js';
 
-export {Data};
+export default Data;

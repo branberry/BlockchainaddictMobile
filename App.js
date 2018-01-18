@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, View, ScrollView, Image, TextInput, Button, Alert } from 'react-native';
-
+import Data from './app/components/Data/index.js';
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -36,6 +36,7 @@ export default class App extends Component {
         <Text style={{padding: 10, fontSize: 42}}>
           {this.state.text.split(' ').map((word) => word && '🍕').join(' ')}
         </Text>
+   
         <Button 
           onPress={() => {
               Alert.alert('Bitcoin\'s price: ' + this.state.usd);
