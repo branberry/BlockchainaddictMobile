@@ -6,6 +6,7 @@ export default class App extends Component {
     super(props);
     this.state = {
       text: '',
+      isLoading: true,
       usd: 0,
     };
   }
@@ -24,7 +25,7 @@ export default class App extends Component {
     return (
       <View style={{flex: 1}}>
         <View style={styles.container}>
-          <Text style={styles.titleText}>Blockchain Addict {this.state.usd} </Text>
+          <Text style={styles.titleText}>Blockchain Addict  </Text>
         </View>
         <View style={styles.subContainer}>
         <TextInput
@@ -37,10 +38,10 @@ export default class App extends Component {
         </Text>
         <Button 
           onPress={() => {
-              Alert.alert('You tapped the button!');
+              Alert.alert('Bitcoin\'s price: ' + this.state.usd);
             }
           }
-          title='Click Here'
+          title='Bitcoin Value'
           />
         </View>
       </View>
