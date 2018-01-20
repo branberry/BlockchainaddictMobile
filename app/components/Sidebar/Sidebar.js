@@ -4,13 +4,13 @@ import {
     Text,
     TextInput,
     View,
-    Platform
+    Platform,
   } from 'react-native'
-  
+
   import {
     Container,
     Icon,
-    Button
+    Button,
   } from 'native-base'
 
 import styles from './styles';
