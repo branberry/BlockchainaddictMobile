@@ -27,6 +27,24 @@ export default StyleSheet.create({
     },
 
     selectorAndroid : {
-
+        fontSize: 18,
+        color :'#CCCCCC',  
     },
+
+    bottomLink  : {
+        position : 'absolute',
+        bottom: 0,
+        marginLeft : 15,
+        paddingBottom: 10,
+        flex: 1,
+        flexDirection: 'row',
+    },
+
+    bottomLinkWord: {
+        fontSize : 14,
+        flex : 1,
+        color : 'rgba(207,206,207,0.7)',
+        fontWeight : '600',
+    }
+
 })

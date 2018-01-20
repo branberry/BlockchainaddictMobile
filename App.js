@@ -17,9 +17,10 @@ export default class App extends Component {
     return (
       <View style={{flex: 1}}>
         <View style={styles.container}>
-          <Text style={styles.titleText}>Blockchain Addict</Text>
+          <Text style={styles.titleText}>Your Portfolio</Text>
         </View>
         <View style={styles.subContainer}>
+        <Sidebar/>
         <Networking/>
         </View>
       </View>

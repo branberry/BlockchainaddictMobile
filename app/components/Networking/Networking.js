@@ -8,6 +8,7 @@ export default class Networking extends Component {
 
         this.state = {
             usd: 0,
+            buttonId: 4123,
         }
     }
     componentDidMount() {
