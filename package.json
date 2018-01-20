@@ -4,15 +4,10 @@
   "private": true,
   "devDependencies": {
     "jest-expo": "23.0.0",
-    "react-native-scripts": "1.8.1",
     "react-test-renderer": "16.0.0"
   },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
     "test": "node node_modules/jest/bin/jest.js --watch"
   },
   "jest": {
@@ -28,9 +23,10 @@
     "exp-cli": "^5.0.0",
     "expo": "^24.0.2",
     "expo-cli": "^1.0.0",
+    "ionicons": "^3.0.0",
     "native-base": "^2.3.7",
     "react": "16.0.0",
-    "react-native": "0.50.3",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-23.0.0.tar.gz",
     "react-native-chart": "^1.0.8-beta",
     "react-native-pathjs-charts": "^0.0.33",
     "react-native-side-menu": "^1.1.3",

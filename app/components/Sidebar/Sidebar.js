@@ -25,7 +25,7 @@ export default class Sidebar extends Component {
                         <Button style={Platform.OS === 'android' ? {marginBottom: 20, backgroundColor: 'rgba(255,255,255,.05)', width: '96%', height: 35, paddingTop: 6, paddingLeft: 7} : {backgroundColor: 'transparent',paddingLeft: 0}}
                          >
                          <Text style={Platform.OS === 'android' ? styles.selectorAndroid : styles.selector}>
-                         <Icon name='home' style={{color: '#FDC134',fontSize: 14, backgroundColor: 'transparent'}}/> Login
+                         <Icon name='md-menu' style={{color: '#FDC134',fontSize: 14, backgroundColor: 'transparent'}}/> Login
                          </Text>
                         </Button>
                     </View>
