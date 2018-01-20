@@ -23,11 +23,15 @@
     "appcenter-analytics": "^1.1.0",
     "appcenter-crashes": "^1.1.0",
     "auth0-js": "^9.0.3",
+    "exp": "^48.0.0",
+    "exp-cli": "^5.0.0",
     "expo": "^24.0.2",
     "expo-cli": "^1.0.0",
+    "native-base": "^2.3.7",
     "react": "16.0.0",
     "react-native": "0.50.3",
     "react-native-chart": "^1.0.8-beta",
-    "react-native-pathjs-charts": "^0.0.33"
+    "react-native-pathjs-charts": "^0.0.33",
+    "react-native-side-menu": "^1.1.3"
   }
 }

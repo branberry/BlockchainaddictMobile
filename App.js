@@ -1,6 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View, ScrollView, Image, TextInput, Button, Alert } from 'react-native';
-import Data from './app/components/Data/index.js';
+import Networking from './app/components/Networking';
+import Sidebar from './app/components/Sidebar';
+
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -10,22 +12,13 @@ export default class App extends Component {
       usd: 0,
     };
   }
-  componentDidMount() {
-    return fetch('https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD')
-    .then((response) => response.json())
-    .then((responseJson) => {
-        let usd = responseJson.USD;
-        this.setState({usd});
-    })
-    .catch((error) => {
-        console.error(error);
-    });
-  }
+
   render() {
+
     return (
       <View style={{flex: 1}}>
         <View style={styles.container}>
-          <Text style={styles.titleText}>Blockchain Addict  </Text>
+          <Text style={styles.titleText}>Blockchain Addict</Text>
         </View>
         <View style={styles.subContainer}>
         <TextInput
@@ -36,15 +29,10 @@ export default class App extends Component {
         <Text style={{padding: 10, fontSize: 42}}>
           {this.state.text.split(' ').map((word) => word && '🍕').join(' ')}
         </Text>
-   
-        <Button 
-          onPress={() => {
-              Alert.alert('Bitcoin\'s price: ' + this.state.usd);
-            }
-          }
-          title='Bitcoin Value'
-          />
+       
+
         </View>
+        <Networking/>
       </View>
     );
   }
